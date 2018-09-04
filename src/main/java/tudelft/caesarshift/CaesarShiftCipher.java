@@ -1,4 +1,4 @@
-package tudelft.partition.exercise.caesarshift;
+package tudelft.caesarshift;
 
 public class CaesarShiftCipher {
 
