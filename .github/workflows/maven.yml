@@ -4,6 +4,7 @@
 name: Java CI with Maven
 //hello
 //world
+//branch
 on:
   push:
     branches: [ master ]
