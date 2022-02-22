@@ -3,6 +3,7 @@
 
 name: Java CI with Maven
 //hello
+//world
 on:
   push:
     branches: [ master ]
