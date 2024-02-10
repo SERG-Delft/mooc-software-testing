@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class GettingStartedTest {
 
     @Test
-    public void addFiveTo20() {
+    public void addFiveToTwenty() {
         int result = new GettingStarted().addFive(20);
         Assertions.assertEquals(25,result);
     }
