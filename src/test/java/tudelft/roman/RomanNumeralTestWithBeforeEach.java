@@ -9,9 +9,7 @@ public class RomanNumeralTestWithBeforeEach {
     private RomanNumeral roman;
 
     @BeforeEach
-    public void initialize() {
-        this.roman = new RomanNumeral();
-    }
+    public void initialize() {this.roman = new RomanNumeral();}
 
     @Test
     public void singleNumber() {
@@ -35,5 +33,15 @@ public class RomanNumeralTestWithBeforeEach {
     public void numberWithAndWithoutSubtractiveNotation() {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
+    }
+    @Test
+    public void numberWithandWithoutLargeSubtractiveNotation() {
+        int result = roman.convert("XCIX");
+        Assertions.assertEquals(99, result);
+    }
+    @Test
+    public void numberWithLargeSubtractiveNotation() {
+        int result = roman.convert("CD");
+        Assertions.assertEquals(400, result);
     }
 }

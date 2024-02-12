@@ -15,11 +15,9 @@ public class NumFinder {
         }
     }
 
-    public int getSmallest () {
-        return smallest;
+    public int getSmallest () {return smallest;
     }
 
-    public int getLargest () {
-        return largest;
+    public int getLargest () {return largest;
     }
 }
