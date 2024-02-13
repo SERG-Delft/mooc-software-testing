@@ -1,10 +1,10 @@
 package tudelft.roman;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class RomanNumeralTest {
-
 
     @Test
     public void singleNumber() {
@@ -32,5 +32,17 @@ public class RomanNumeralTest {
         RomanNumeral roman = new RomanNumeral();
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
+    }
+    @Test
+    public void numberWithandWithoutLargeSubtractiveNotation() {
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("XCIX");
+        Assertions.assertEquals(99, result);
+    }
+    @Test
+    public void numberWithLargeSubtractiveNotation() {
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("CD");
+        Assertions.assertEquals(400, result);
     }
 }

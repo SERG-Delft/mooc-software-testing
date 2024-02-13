@@ -9,17 +9,15 @@ public class NumFinder {
 
             if(n < smallest)
                 smallest = n;
-            else if (n > largest)
+            if (n > largest)
                 largest = n;
 
         }
     }
 
-    public int getSmallest () {
-        return smallest;
+    public int getSmallest () {return smallest;
     }
 
-    public int getLargest () {
-        return largest;
+    public int getLargest () {return largest;
     }
 }
