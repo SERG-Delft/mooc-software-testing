@@ -12,10 +12,22 @@ public class GHappyTest {
     public void initialize() {this.G = new GHappy();}
 
     /**
+     * We'll say that a lowercase 'g' in a string is "happy" if there is another 'g' immediately to its left or right.
+     * Return true if all the g's in the given string are happy.
+     *
+     * Examples:
+         * gHappy("xxggxx") ==> true
+         * gHappy("xxgxx") ==> false
+         * gHappy("xxggyygxx") ==> false
+     * See our implementation in the GHappy class (package tudelft.ghappy).
+     * There's a bug in this implementation. Apply everything you learned and do your best to find the bug!!
+     * Write your automated tests inside GHappyTest class.
+     * At the end, push your solution to your GitHub repository.
+     *
      * Test the following conditions
-     * checkG_001 gHappy("xxggxx") ==> true
-     * checkG_002 gHappy("xxgxx") ==> false
-     * checkG_003 gHappy("xxggyygxx") ==> false
+         * checkG_001 gHappy("xxggxx") ==> true
+         * checkG_002 gHappy("xxgxx") ==> false
+         * checkG_003 gHappy("xxggyygxx") ==> false
      */
     @Test
     public void checkG_001() {

@@ -5,6 +5,20 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import tudelft.ghappy.GHappy;
 
+/**
+ * A Caesar Cipher is a simply way to encrypt messages.
+ * There are two inputs: A message and a shift.
+ * The message can be any string containing lower case letters and spaces,
+ * any other characters will return 'invalid' The shift can be any positive or negative integer.
+ * Each letter of the message is then shifted by the specified amount
+ * (if shift is '3' then 'abc' becomes 'def' and 'xyz' becomes 'abc').
+ *
+ * See our implementation in the CaesarCipherShift class (package tudelft.caesarcipher).
+ * There's a bug in this implementation. Apply everything you learned and do your best to find the bug!!
+ * Write your automated tests inside CaeserCipherShiftTest class.
+ * At the end, push your solution to your GitHub repository.
+ */
+
 public class CaesarShiftCipherTest {
     private CaesarShiftCipher encrypt;
     @BeforeEach
